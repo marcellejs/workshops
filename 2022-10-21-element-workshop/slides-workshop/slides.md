@@ -158,8 +158,47 @@ dash
 
 You should get something like this:
 
+<img src="/images/capture_page_testset.png" width='650'>
 
 
+---
+
+Setting the counter
+
+```js
+const $ctlTestData = captureTestData.$click.chain(() =>
+  Stream.periodic(1000).withItems(['3', '2', '1', 'start', 'start', 'start', 'stop']),
+);
+```
+```js
+$ctlTestData.subscribe((x) => counter.$value.set(`<span style="font-size: 32px">${x}</span>`));
+```
+
+---
+
+Creating instances 
+
+```js
+const $instancesTest = $ctlTestData
+  .filter((x) => ['start', 'stop'].includes(x))
+  .skipRepeats()
+  .map((x) => (x === 'start' ? 1 : 0))
+  .map((record) => (record ? input.$images : Stream.empty()))
+  .switchLatest()
+  .map(async (img) => {
+    const result = await featureExtractor.predict(img);
+    const thumbnail = featureExtractor.thumbnail(img, result);
+    return {
+      x: result,
+      y: label.$value.get(),
+      raw_image: img,
+      thumbnail,
+    };
+  })
+  .awaitPromises();
+
+$instancesTest.subscribe(testSet.create);
+```
 
 ---
 
