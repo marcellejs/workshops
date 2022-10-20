@@ -101,25 +101,6 @@ const poseViz = imageDisplay(
 );
 ```
 
-<!-- ---
-
-- Import the feature extractor
-
-```js {2}
-import { webcam, imageDisplay } from '@marcellejs/core';
-import { featureExtractor } from './input';
-
-const input = webcam();
-
-const poseViz = imageDisplay(
-  input.$images
-    .map(async (img) => {
-      const result = await featureExtractor.predict(img);
-      return featureExtractor.render(img, result);
-    })
-    .awaitPromises(),
-);
-``` -->
 
 ---
 
@@ -322,6 +303,9 @@ $instancesTest.subscribe(testSet.create);
 ---
 
 # So What?
+
+Let's use the test set to evaluate our model
+
 
 ---
 
