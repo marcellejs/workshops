@@ -154,16 +154,23 @@ const dash = dashboard({
 
 dash
   .page('[Capture Data]')
-  .sidebar(input, featureExtractor, showSkeleton, poseViz2)
+  .sidebar(input, showSkeleton, poseViz2)
   .use([label, capture, counter], trainingSetBrowser);
-dash.page('[Train Model]').use(params, b, prog, plotTraining);
-dash.page('[Real-time Prediction]').sidebar(input, poseViz2).use(tog, plotResults);
+dash
+  .page('[Train Model]')
+  .use(params, b, prog, plotTraining);
+dash
+  .page('[Real-time Prediction]')
+  .sidebar(input, showSkeleton, poseViz2)
+  .use(tog, plotResults);
 dash.settings
   .dataStores(store)
   .datasets(trainingSet)
   .models(classifier)
   .predictions(batchMLP)
   .use('MoveNet Configuration', selectPreset, skeletonImage);
-dash.page('[Inspect Confusions]').use(predictButton, confMat);
+dash
+  .page('[Inspect Confusions]')
+  .use(predictButton, confMat);
 
 dash.show();
