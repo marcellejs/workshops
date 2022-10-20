@@ -137,7 +137,7 @@ viz = datasetVisualizer();
 
 # Demo
 
-(Put online link here)
+https://element-days-demo.netlify.app/
 
 <!-- npx degit marcellejs/workshops/2022-10-21-element-workshop/demo element-tuto -->
 
