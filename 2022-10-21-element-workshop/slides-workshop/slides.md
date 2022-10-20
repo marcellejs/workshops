@@ -58,18 +58,108 @@ The last comment block of each slide will be treated as slide notes. It will be 
 - 11h30: Introducing advanced features 🛠
 - 12h30: Discussion in the context of participants' projects
 
+---
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
+# Demo
+
+(Put online link here)
+
+---
+
+# Getting your hands dirty
+
+Starting from the source code of the previous demo ...
+
+<!-- Source code is hosted on GitHub: [https://github.com/marcellejs/workshops](https://github.com/marcellejs/workshops) -->
+
+- Get the code on your machine
+```
+git clone https://github.com/marcellejs/workshops.git .
+```
+
+- Go to the demo folder
+```
+cd workshops/demo
+```
+
+- Run the demo
+```
+npm run dev
+```
+
+- Open a browser and go to http://localhost:3000 (or change 3000 with the port displayed in the console)
+
+---
+layout: image-right
+---
+
+# Exploring the code
+
+
+Looking at `index.js` in an editor
+
+---
+
+# Adding a *Test Set*
+
+A test set is a dataset whose images are not used for model training
+
+Create a new page to capture the data
+
+```js
+dash
+  .page('Capture Test Set')
+  .sidebar(input, showSkeleton, poseViz2); 
+```
+
+---
+
+Declare a new button to be used to capture the data
+```js
+const captureTestData = button('Start Recording After Countdown');
+```
+
+---
+
+Declare a new button to be used to capture the data
+```js
+const captureTestData = button('Start Recording After Countdown');
+```
+
+Declare a new dataset to store the captured data and its visualiser
+```js
+const testSet = dataset('test-set-poses', store);
+const testSetBrowser = datasetBrowser(testSet);
+```
+
+
+---
+
+Declare a new button to be used to capture the data
+```js
+const captureTestData = button('Start Recording After Countdown');
+```
+
+Declare a new dataset to store the captured data and its visualiser
+```js
+const testSet = dataset('test-set-poses', store);
+const testSetBrowser = datasetBrowser(testSet);
+```
+
+Add these elements on the dashboard's page `Capture Test Set`, together with label and counter components already used to capture training data:
+```js {4}
+dash
+  .page('Capture Test Set')
+  .sidebar(input, showSkeleton, poseViz2)
+  .use([label, captureTestData, counter], testSetBrowser);
+```
+
+---
+
+You should get something like this:
+
+
+
 
 ---
 
