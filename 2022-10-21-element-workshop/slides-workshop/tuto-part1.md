@@ -7,13 +7,19 @@ Starting from the source code of the previous demo ...
 - Get the code on your machine
 
 ```
-git clone https://github.com/marcellejs/workshops.git .
+git clone https://github.com/marcellejs/workshops.git 
 ```
 
 - Go to the demo folder
 
 ```
-cd workshops/demo
+cd workshops/2022-10-21-element-workshop/demo 
+```
+
+- Install the demo
+
+```
+npm install
 ```
 
 - Run the demo
@@ -22,7 +28,7 @@ cd workshops/demo
 npm run dev
 ```
 
-- Open a browser and go to http://localhost:3000 (or change 3000 with the port displayed in the console)
+- Open a browser and go to http://localhost:5173 (or change 5173 with the port displayed in the console)
 
 ---
 layout: image-right
