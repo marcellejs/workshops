@@ -7,6 +7,8 @@ import * as CaptureData from './capture-data';
 import * as Training from './training';
 import * as RealTimePrediction from './real-time-prediction';
 import * as InspectConfusion from './inspect-confusions';
+// import * as CaptureTestSet from './capture-test-set';
+// import * as ScatterCluster from './scatter-cluster';
 
 // This is the main script that defines our application.
 // While it would be possible to write the entire app in a single script, it is divided
@@ -24,6 +26,8 @@ CaptureData.setupPage(dash);
 Training.setupPage(dash);
 RealTimePrediction.setupPage(dash);
 InspectConfusion.setupPage(dash);
+// CaptureTestSet.setupPage(dash);
+// ScatterCluster.setupPage(dash);
 
 dash.settings
   .dataStores(store)
