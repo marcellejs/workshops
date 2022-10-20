@@ -356,14 +356,14 @@ Uploading image from the disk instead of capturing images live...
 
 --- 
 
-- Let's edit the `capture-test-set.js` as such:
+- Let's edit the `input.js` as such:
 
 ```js 
 import { imageUpload } from '@marcellejs/core';
 
 ...
 
-const input = imageUpload();
+const input = imageUpload({ width: 224, height: 224 });
 
 
 ```
