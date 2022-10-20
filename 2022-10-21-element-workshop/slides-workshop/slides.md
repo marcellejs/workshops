@@ -44,6 +44,8 @@ ELEMENT Workshop - October 21st, 2022
 
 (Put online link here)
 
+<!-- npx degit marcellejs/workshops/2022-10-21-element-workshop/demo element-tuto -->
+
 
 ---
 src: ./tuto-part1.md

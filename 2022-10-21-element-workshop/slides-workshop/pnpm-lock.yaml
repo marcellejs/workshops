@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@iconify-json/twemoji': ^1.1.5
   '@slidev/cli': ^0.36.7
   '@slidev/theme-default': '*'
   '@slidev/theme-seriph': '*'
@@ -9,6 +10,9 @@ dependencies:
   '@slidev/cli': 0.36.7_postcss@8.4.18
   '@slidev/theme-default': 0.21.2
   '@slidev/theme-seriph': 0.21.3
+
+devDependencies:
+  '@iconify-json/twemoji': 1.1.5
 
 packages:
 
@@ -295,9 +299,14 @@ packages:
       '@iconify/types': 2.0.0
     dev: false
 
+  /@iconify-json/twemoji/1.1.5:
+    resolution: {integrity: sha512-1sTyrLUrMF7QhXS8a9XOd2ySgxgESQTRvhtN471QFdqIaXMi7oWB5UUFh0z984s/al4Iclet+O8BZfuhM9t7lg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
   /@iconify/types/2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
-    dev: false
 
   /@iconify/utils/2.0.1:
     resolution: {integrity: sha512-t8IyICk25wgZL4YKn/2kYfjG5MGA6EWZlaUJZ1OEIku4V+kX9V900T5E4HIqS3hLyD6/RJET0zY4vxO9pHLHHw==}
