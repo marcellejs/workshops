@@ -6,7 +6,10 @@ layout: center
 
 Let's add other visualizations and unsupervised learning!
 
-<!-- We can visualize the dataset using a scatter plot, to offer user a different way to navigate/explore their data. -->
+---
+
+![scatter step 3](/scatter-step3.png)
+
 
 ---
 

@@ -50,12 +50,12 @@ Jules Françoise, Baptiste Caramiaux
 
 ---
 layout: image-right
-image: /images/image_code.png
+image: /image_code.png
 ---
 
 # ML Programming
 
-<!-- <img src="/images/image_code.png" width='650'>  -->
+<!-- <img src="/image_code.png" width='650'>  -->
 - **Monitoring**
   - *Tensorboard*
   - *ML flow*
@@ -67,16 +67,16 @@ image: /images/image_code.png
 
 ---
 layout: image-right
-image: 
+image:
 ---
 
 # Architecture Model
 
 
 ```js
-input = webcam(); 
+input = webcam();
 
-clf = BigDNNModel(); 
+clf = BigDNNModel();
 
 viz = datasetVisualizer();
 
@@ -84,16 +84,16 @@ viz = datasetVisualizer();
 
 ---
 layout: image-right
-image: /images/architecture_model_img.png
+image: /architecture_model_img.png
 ---
 
 # Architecture Model
 
 
 ```js
-input = webcam(); 
+input = webcam();
 
-clf = BigDNNModel(); 
+clf = BigDNNModel();
 
 viz = datasetVisualizer();
 
@@ -101,16 +101,16 @@ viz = datasetVisualizer();
 
 ---
 layout: image-right
-image: /images/architecture_model_img.png
+image: /architecture_model_img.png
 ---
 
 # Architecture Model
 
 
 ```js
-input = webcam(); 
+input = webcam();
 
-clf = BigDNNModel(); 
+clf = BigDNNModel();
 
 viz = datasetVisualizer();
 
@@ -122,25 +122,22 @@ viz = datasetVisualizer();
 
 ---
 
-# How to use it? https://marcelle.dev 
+# How to use it? https://marcelle.dev
 
-<img src="/images/marcelle_website.png" width='750'> 
+<img src="/marcelle_website.png" width='750'>
 
 ---
 
 # What else? Anything, it’s JavaScript
 
-<img src="/images/teach_tok.png" width='750'> 
+<img src="/teach_tok.png" width='750'>
 
 
 ---
 
 # Demo
 
-(Put online link here)
-
-<!-- npx degit marcellejs/workshops/2022-10-21-element-workshop/demo element-tuto -->
-
+https://element-days-demo.netlify.app/
 
 ---
 src: ./tuto-part1.md
@@ -151,5 +148,5 @@ src: ./tuto-part2.md
 ---
 
 ---
-src: ./example.md
+src: ./advanced.md
 ---

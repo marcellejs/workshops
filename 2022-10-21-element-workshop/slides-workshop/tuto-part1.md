@@ -1,3 +1,22 @@
+# (Before) Getting your hands dirty
+
+You will need:
+
+<v-clicks>
+
+1. A computer 💻 ... with a webcam
+2. A (modern) web browser (Chrome or Firefox)
+3. A code editor (recommended: VSCode or Sublime Text)
+4. To know how to run commands in a terminal
+5. Node.js installed (https://nodejs.org/en/) => LTS
+    ```sh
+    node --version
+    ```
+
+</v-clicks>
+
+---
+
 # Getting your hands dirty
 
 Starting from the source code of the previous demo ...
@@ -7,13 +26,14 @@ Starting from the source code of the previous demo ...
 - Get the code on your machine
 
 ```
-git clone https://github.com/marcellejs/workshops.git .
+npx degit marcellejs/workshops/2022-10-21-element-workshop/demo element-tuto
 ```
 
-- Go to the demo folder
+- Install dependencies
 
 ```
-cd workshops/demo
+cd element-tuto
+npm i
 ```
 
 - Run the demo
@@ -22,7 +42,7 @@ cd workshops/demo
 npm run dev
 ```
 
-- Open a browser and go to http://localhost:3000 (or change 3000 with the port displayed in the console)
+- Open a browser and go to http://localhost:5173 (or change 5173 with the port displayed in the console)
 
 ---
 layout: image-right
@@ -62,11 +82,11 @@ CaptureTestSet.setupPage(dash);
 
 You should see:
 
-<img src="/images/capture_test-set_empty.png" width='650'>
+<img src="/capture_test-set_empty.png" width='650'>
 
 ---
 
-- Add the input data component 
+- Add the input data component
 
 ```js
 import { input } from './input';
@@ -116,14 +136,14 @@ export function setupPage(dashboard) {
 }
 ```
 
---- 
+---
 
 You should see:
 
-<img src="/images/capture_test-set_webcam.png" width='650'>
+<img src="/capture_test-set_webcam.png" width='650'>
 
 
---- 
+---
 
 - Add a button to be used to capture the data
 
@@ -199,7 +219,7 @@ export function setupPage(dashboard) {
 
 You should get something like this:
 
-<img src="/images/capture_page_testset.png" width='650'>
+<img src="/capture_page_testset.png" width='650'>
 
 ---
 
@@ -317,7 +337,7 @@ export const testSet = dataset('test-set-poses', store);
 
 ---
 
-- In `inspect-confusions.js`, a first edit at `line 26`: 
+- In `inspect-confusions.js`, a first edit at `line 26`:
 
 ```js {3}
 await batchMLP.predict(
@@ -326,23 +346,23 @@ await batchMLP.predict(
   );
 ```
 
-- A second edit at `line 41`: 
+- A second edit at `line 41`:
 
 ```js
 const confusionDataset = dataset('test-set-poses', store);
 ```
 
---- 
+---
 
-# Changing input? 
+# Changing input?
 
 Uploading image from the disk instead of capturing images live...
 
---- 
+---
 
 - Let's edit the `input.js` as such:
 
-```js 
+```js
 import { imageUpload } from '@marcellejs/core';
 
 ...
