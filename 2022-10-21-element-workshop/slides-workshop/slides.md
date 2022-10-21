@@ -81,7 +81,7 @@ Overview
 
 <div class="w-2/3 mx-auto">
 
-![Compots](arch-01.png)
+![Compots](/arch-01.png)
 
 </div>
 
@@ -93,7 +93,7 @@ Overview
 
 <div class="w-full mx-auto">
 
-![Layouts](arch-02.png)
+![Layouts](/arch-02.png)
 
 </div>
 
@@ -105,7 +105,7 @@ Overview
 
 <div class="w-full mx-auto">
 
-![Pipelines](arch-03.png)
+![Pipelines](/arch-03.png)
 
 </div>
 
@@ -121,7 +121,7 @@ Overview
 
 <div class="w-full mx-auto">
 
-![Pipelines](arch-04.png)
+![Pipelines](/arch-04.png)
 
 </div>
 
@@ -133,7 +133,7 @@ Overview
 
 <div class="w-full mx-auto">
 
-![Pipelines](arch-05b.png)
+![Pipelines](/arch-05b.png)
 
 </div>
 
