@@ -71,7 +71,7 @@ image: /image_code.png
 
 Overview
 
-![Principle](marcelle-principle.png)
+![Principle](/marcelle-principle.png)
 
 ---
 

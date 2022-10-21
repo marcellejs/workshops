@@ -147,3 +147,9 @@ export function setupPage(dashboard) {
 ---
 
 ![scatter step 3](/scatter-step3.png)
+
+---
+
+# Solution
+
+https://github.com/marcellejs/workshops/blob/main/2022-10-21-element-workshop/tutorial-solution/src/scatter-cluster.js
