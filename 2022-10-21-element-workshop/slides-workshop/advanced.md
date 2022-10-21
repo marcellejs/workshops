@@ -13,7 +13,11 @@ layout: fact
 - Custom Components / Custom Applications
 - Interating with Python
 
+<v-click>
+
 ![Architecture](/marcelle-architecture.png)
+
+</v-click>
 
 ---
 
@@ -23,7 +27,7 @@ https://marcelle.dev/cli.html
 
 <br>
 
-**Generating an app**
+**App Generator**
 
 ```sh
 npm init marcelle my-marcelle-app

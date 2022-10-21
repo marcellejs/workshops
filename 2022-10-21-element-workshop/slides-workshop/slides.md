@@ -66,8 +66,77 @@ image: /image_code.png
 <arrow x1="630" y1="320" x2="800" y2="400" color="#564" width="3" arrowSize="2" /> -->
 
 ---
-layout: image-right
-image:
+
+# Architecture
+
+Overview
+
+![Principle](marcelle-principle.png)
+
+---
+
+# Architecture
+
+\#1 Components
+
+<div class="w-2/3 mx-auto">
+
+![Compots](arch-01.png)
+
+</div>
+
+---
+
+# Architecture
+
+\#2 Composable Interfaces
+
+<div class="w-full mx-auto">
+
+![Layouts](arch-02.png)
+
+</div>
+
+---
+
+# Architecture
+
+\#3 Interaction-Driven Pipelines
+
+<div class="w-full mx-auto">
+
+![Pipelines](arch-03.png)
+
+</div>
+
+<v-click>
+=> Reactive Programming
+</v-click>
+
+---
+
+# Architecture
+
+\#4 Data Persistence & Communication
+
+<div class="w-full mx-auto">
+
+![Pipelines](arch-04.png)
+
+</div>
+
+---
+
+# Architecture
+
+\#5 Interoperability with ML Libraries (Python)
+
+<div class="w-full mx-auto">
+
+![Pipelines](arch-05b.png)
+
+</div>
+
 ---
 
 # Architecture Model
