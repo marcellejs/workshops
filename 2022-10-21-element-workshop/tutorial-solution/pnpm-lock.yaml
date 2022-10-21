@@ -1,10 +1,10 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@marcellejs/backend': ^0.6.0-next.0
-  '@marcellejs/core': ^0.6.0-next.0
-  '@marcellejs/design-system': ^0.6.0-next.0
-  '@marcellejs/devtools': ^0.6.0-next.0
+  '@marcellejs/backend': ^0.6.0
+  '@marcellejs/core': ^0.6.0
+  '@marcellejs/design-system': ^0.6.0
+  '@marcellejs/devtools': ^0.6.0
   '@sveltejs/vite-plugin-svelte': ^1.0.9
   eslint: ^8.24.0
   eslint-config-prettier: ^8.5.0
@@ -17,12 +17,12 @@ specifiers:
   vite: ^3.1.8
 
 dependencies:
-  '@marcellejs/backend': 0.6.0-next.2
-  '@marcellejs/core': 0.6.0-next.2
+  '@marcellejs/backend': 0.6.0
+  '@marcellejs/core': 0.6.0
 
 devDependencies:
-  '@marcellejs/design-system': 0.6.0-next.0
-  '@marcellejs/devtools': 0.6.0-next.0
+  '@marcellejs/design-system': 0.6.0
+  '@marcellejs/devtools': 0.6.0
   '@sveltejs/vite-plugin-svelte': 1.0.9_svelte@3.52.0+vite@3.1.8
   eslint: 8.25.0
   eslint-config-prettier: 8.5.0_eslint@8.25.0
@@ -463,8 +463,8 @@ packages:
       '@lukeed/csprng': 1.0.1
     dev: true
 
-  /@marcellejs/backend/0.6.0-next.2:
-    resolution: {integrity: sha512-jZEJUdhP3bzOs8Sl05oj+qjo0KMmCnbRKwjB3YpXTuNZGYiOrG27402bbh9qEhPHCYqItj0IL6o49kuTrmFoYw==}
+  /@marcellejs/backend/0.6.0:
+    resolution: {integrity: sha512-LsfJ42X+99iBXD7KrIFXpQZKXDJnVCUNZ422eYfE7OfXqD0Nd4vgZBWArl1rc55nUHoPECUpnFyj/Q/m8GPbYw==}
     engines: {node: '>=14.0.0', yarn: '>= 0.18.0'}
     hasBin: true
     dependencies:
@@ -507,8 +507,8 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@marcellejs/core/0.6.0-next.2:
-    resolution: {integrity: sha512-2KAO3M1DZtSRB4+b5bsa/M7IqOJHSe8gf4BN8BkwUlDUZyOcDwNYw/km9meY0j86PVkoCPupQHd+906pAzAGsg==}
+  /@marcellejs/core/0.6.0:
+    resolution: {integrity: sha512-NQbUSMwDVmzetMjXZixPuRF2UVyLLXILFh+su5HO11BR9fad5rmWYuxM/U3GfzKTmVIeIRUbnhU7KZx5BomiEQ==}
     dependencies:
       '@feathersjs/authentication-client': 4.5.15
       '@feathersjs/feathers': 4.5.15
@@ -556,8 +556,8 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@marcellejs/design-system/0.6.0-next.0:
-    resolution: {integrity: sha512-1UhNL7BTJfvyHzHMY0U/r/YYOIyLOGYNh2Niu3MniqL/Yfm9NnmuB2mjBmZZaBmz21UbOtTJp6vpAkRS26JEIA==}
+  /@marcellejs/design-system/0.6.0:
+    resolution: {integrity: sha512-iljQltAfdAwP6YcLqXbW+9iSArdEfKtdmYFa2qUnC6ghMlQFsofOyf6VYrN925Vo4BVhus3OEVKlU4PuOvtFQQ==}
     dependencies:
       '@feathersjs/feathers': 4.5.15
       '@fontsource/fira-mono': 4.5.10
@@ -568,8 +568,8 @@ packages:
       - supports-color
     dev: true
 
-  /@marcellejs/devtools/0.6.0-next.0:
-    resolution: {integrity: sha512-hqS92kfnCvdlON9byY+/iYyoTZSujF51vnY20KgBs0XGR6A/KuvcDRoNeVcNciqbeLRF6qd3pm5jTJ0tAcGqzQ==}
+  /@marcellejs/devtools/0.6.0:
+    resolution: {integrity: sha512-sP9Kuowv0Cv4mUK0yX5m/6M0IkX9VrjVSpGlkKtKtMQRAKWnDIRS3CffyllikccSHAZ//HLmQxf+uzWv+Goscw==}
     hasBin: true
     dependencies:
       '@octokit/rest': 18.12.0
